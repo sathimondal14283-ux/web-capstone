@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Learnify — Online Courses</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#" aria-label="Learnify home">
+        <span class="logo-mark">L</span>
+        <span class="logo-text">Learnify</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <input class="search" type="search" placeholder="Search courses, topics..." aria-label="Search">
+        <a class="btn btn-outline" href="#">Login</a>
+        <a class="btn btn-primary" href="#">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Unlock Your Potential with Online Learning</h1>
+          <p class="lead">Join thousands of learners and access top-rated courses from expert instructors. Learn anytime, anywhere.</p>
+
+          <form class="hero-search" role="search" aria-label="Find courses">
+            <input type="text" placeholder="What do you want to learn?" aria-label="What do you want to learn?">
+            <button class="btn btn-primary">Find Courses</button>
+          </form>
+
+          <ul class="hero-features">
+            <li>Video tutorials</li>
+            <li>Certificate</li>
+            <li>Self-paced</li>
+          </ul>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <!-- Local screenshot from user -->
+          <img src="/mnt/data/Screenshot 2025-11-23 201116.png" alt="Learning platform preview" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="section categories">
+      <div class="container">
+        <h2 class="section-title">Popular Categories</h2>
+
+        <ul class="categories-grid" role="list">
+          <li class="category-card">💻<span>Development</span></li>
+          <li class="category-card">🎨<span>Design</span></li>
+          <li class="category-card">📈<span>Business</span></li>
+          <li class="category-card">🗣️<span>Languages</span></li>
+          <li class="category-card">📚<span>Academics</span></li>
+          <li class="category-card">🎵<span>Music</span></li>
+          <li class="category-card">🧘<span>Lifestyle</span></li>
+          <li class="category-card">🔬<span>Science</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section id="courses" class="section featured">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Featured Courses</h2>
+          <div class="filters">
+            <label>
+              Level:
+              <select>
+                <option>All</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+              </select>
+            </label>
+            <label>
+              Price:
+              <select>
+                <option>All</option>
+                <option>Free</option>
+                <option>Paid</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="courses-grid">
+          <!-- course card 1 -->
+          <article class="course-card">
+            <img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=800&q=60" alt="Course: JavaScript Essentials">
+            <div class="course-body">
+              <h3>JavaScript Essentials</h3>
+              <p class="muted">Start building interactive websites</p>
+              <div class="course-meta">
+                <span>4.8 ★</span>
+                <span>12h</span>
+                <span class="price">Free</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- course card 2 -->
+          <article class="course-card">
+            <img src="https://images.unsplash.com/photo-1581092580493-d5f7a35f3d1a?auto=format&fit=crop&w=800&q=60" alt="Course: UI/UX Design">
+            <div class="course-body">
+              <h3>UI/UX Design Bootcamp</h3>
+              <p class="muted">Design delightful user experiences</p>
+              <div class="course-meta">
+                <span>4.7 ★</span>
+                <span>20h</span>
+                <span class="price">$29</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- course card 3 -->
+          <article class="course-card">
+            <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&q=60" alt="Course: Data Science">
+            <div class="course-body">
+              <h3>Intro to Data Science</h3>
+              <p class="muted">Analyze data and build models</p>
+              <div class="course-meta">
+                <span>4.9 ★</span>
+                <span>30h</span>
+                <span class="price">$49</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- course card 4 -->
+          <article class="course-card">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981d?auto=format&fit=crop&w=800&q=60" alt="Course: Language Learning">
+            <div class="course-body">
+              <h3>Conversational Spanish</h3>
+              <p class="muted">Speak Spanish with confidence</p>
+              <div class="course-meta">
+                <span>4.6 ★</span>
+                <span>10h</span>
+                <span class="price">Free</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+      <div class="container">
+        <h2 class="section-title">What students say</h2>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial">
+            <p>“The courses are thorough and the instructors explain concepts clearly.”</p>
+            <cite>— Aisha, Product Designer</cite>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p>“I landed my first developer job after completing the JavaScript track!”</p>
+            <cite>— Rohit, Frontend Developer</cite>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p>“Great mix of theory and practical projects. Highly recommended.”</p>
+            <cite>— Maria, Data Analyst</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section pricing">
+      <div class="container">
+        <h2 class="section-title">Pricing</h2>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <h3>Free</h3>
+            <p class="price-value">0<span>/month</span></p>
+            <ul>
+              <li>Access to free courses</li>
+              <li>Community support</li>
+              <li>Basic certificates</li>
+            </ul>
+            <a class="btn btn-outline" href="#">Get started</a>
+          </div>
+
+          <div class="price-card price-card-popular">
+            <h3>Pro</h3>
+            <p class="price-value">$9<span>/month</span></p>
+            <ul>
+              <li>All courses</li>
+              <li>Certificates</li>
+              <li>Projects & mentorship</li>
+            </ul>
+            <a class="btn btn-primary" href="#">Join Pro</a>
+          </div>
+
+          <div class="price-card">
+            <h3>Enterprise</h3>
+            <p class="price-value">Contact</p>
+            <ul>
+              <li>Team seats</li>
+              <li>Dedicated support</li>
+              <li>Custom training</li>
+            </ul>
+            <a class="btn btn-outline" href="#">Contact sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2 class="section-title">Get in touch</h2>
+          <p>Have a question? Send us a message and we'll get back to you within 24 hours.</p>
+
+          <ul class="contact-list">
+            <li><strong>Email:</strong> hello@learnify.example</li>
+            <li><strong>Phone:</strong> +1 555 123 4567</li>
+            <li><strong>Address:</strong> 123 Learning Ave, Remote</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="#" method="post" novalidate>
+          <label>
+            Full name
+            <input type="text" name="name" required placeholder="Your name">
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="you@example.com">
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" required placeholder="How can we help?"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <label class="checkbox">
+              <input type="checkbox" name="subscribe">
+              Subscribe to newsletter
+            </label>
+            <button class="btn btn-primary" type="submit">Send message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo inverse" href="#"><span class="logo-mark">L</span><span>Learnify</span></a>
+        <p class="muted">Learnify — Learn new skills anytime.</p>
+      </div>
+
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Support</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <p class="muted">© <span id="year"></span> Learnify. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small script for year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
